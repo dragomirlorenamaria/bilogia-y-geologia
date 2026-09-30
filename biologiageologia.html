@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agencia Internacional de Salud - Misión ODS 3</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#dff6ff,#f5fff5);
+margin:0;
+padding:20px;
+color:#333;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,0.1);
+}
+
+h1,h2,h3{
+color:#1565c0;
+}
+
+.card{
+background:#f8f9fa;
+padding:20px;
+border-radius:15px;
+margin:20px 0;
+border-left:8px solid #4caf50;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:left;
+}
+
+th{
+background:#1565c0;
+color:white;
+}
+
+.pi{
+font-size:24px;
+background:#4caf50;
+color:white;
+padding:10px 20px;
+border-radius:10px;
+display:inline-block;
+}
+
+button{
+background:#1565c0;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#0d47a1;
+}
+
+.badge{
+background:gold;
+padding:5px 10px;
+border-radius:10px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌍 Agencia Internacional de Salud (AIS)</h1>
+<h2>Misión: Guardianes del Bienestar Global</h2>
+
+<div class="card">
+<h3>Narrativa</h3>
+
+<p>
+Año 2035. La Agencia Internacional de Salud detecta un aumento de enfermedades relacionadas con hábitos de vida poco saludables.
+Los estudiantes son reclutados como <strong>Agentes de Salud</strong> y deberán superar misiones para proteger a la población.
+</p>
+
+<p>
+Cada misión superada otorga <strong>Puntos de Inmunidad (PI)</strong>.
+</p>
+
+<div class="pi">
+PI acumulados: <span id="puntos">0</span>
+</div>
+
+<br><br>
+
+<button onclick="sumarPI(10)">Completar misión (+10 PI)</button>
+
+<p id="rango"></p>
+
+</div>
+
+<div class="card">
+<h3>Objetivos</h3>
+
+<ul>
+<li>Comprender la relación entre hábitos saludables y salud.</li>
+<li>Analizar factores de riesgo.</li>
+<li>Promover acciones para mejorar el bienestar.</li>
+<li>Trabajar cooperativamente.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Misiones</h3>
+
+<ol>
+<li><strong>Misión Diagnóstico:</strong> Investigar hábitos saludables.</li>
+<li><strong>Misión Laboratorio:</strong> Analizar alimentación y actividad física.</li>
+<li><strong>Misión Epidemiológica:</strong> Interpretar datos.</li>
+<li><strong>Misión Campaña:</strong> Diseñar una campaña de salud.</li>
+<li><strong>Misión Final:</strong> Presentar soluciones a la comunidad.</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>Cuadro DUA</h2>
+
+<table>
+<tr>
+<th>Fase DUA</th>
+<th>Aplicación</th>
+</tr>
+
+<tr>
+<td><strong>Implicación</strong></td>
+<td>
+Narrativa de agencia internacional, insignias, PI, retos cooperativos, elección de productos finales.
+</td>
+</tr>
+
+<tr>
+<td><strong>Representación</strong></td>
+<td>
+Vídeos, infografías, esquemas, lecturas adaptadas, gráficos y simulaciones.
+</td>
+</tr>
+
+<tr>
+<td><strong>Acción y Expresión</strong></td>
+<td>
+Podcast, cartel, vídeo, presentación oral, informe científico.
+</td>
+</tr>
+
+<tr>
+<td><strong>Socialización</strong></td>
+<td>
+Debates, exposiciones, campañas de salud y difusión a la comunidad educativa.
+</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+<h2>Rúbrica de Evaluación</h2>
+
+<table>
+
+<tr>
+<th>Criterio</th>
+<th>4 Excelente</th>
+<th>3 Adecuado</th>
+<th>2 Básico</th>
+<th>1 Inicial</th>
+</tr>
+
+<tr>
+<td>Conocimientos científicos</td>
+<td>Explica con rigor.</td>
+<td>Algunos errores menores.</td>
+<td>Conceptos incompletos.</td>
+<td>Muchas dificultades.</td>
+</tr>
+
+<tr>
+<td>Análisis de datos</td>
+<td>Interpreta y argumenta.</td>
+<td>Interpretación adecuada.</td>
+<td>Poca profundidad.</td>
+<td>No interpreta.</td>
+</tr>
+
+<tr>
+<td>Trabajo cooperativo</td>
+<td>Lidera y ayuda.</td>
+<td>Participa activamente.</td>
+<td>Participación irregular.</td>
+<td>No colabora.</td>
+</tr>
+
+<tr>
+<td>Producto final</td>
+<td>Muy creativo y riguroso.</td>
+<td>Correcto.</td>
+<td>Poco elaborado.</td>
+<td>Incompleto.</td>
+</tr>
+
+<tr>
+<td>Comunicación</td>
+<td>Excelente expresión.</td>
+<td>Clara.</td>
+<td>Poco organizada.</td>
+<td>Confusa.</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+<h2>Insignias</h2>
+
+<p><span class="badge">🦠 Experto en Inmunidad</span></p>
+<p><span class="badge">🥗 Especialista en Nutrición</span></p>
+<p><span class="badge">🏃 Defensor del Bienestar</span></p>
+<p><span class="badge">🌍 Agente Global de Salud</span></p>
+
+</div>
+
+</div>
+
+<script>
+
+let puntos = 0;
+
+function sumarPI(valor){
+puntos += valor;
+
+document.getElementById("puntos").innerText = puntos;
+
+let rango = "";
+
+if(puntos < 20){
+rango = "🟢 Agente Novato";
+}
+else if(puntos < 50){
+rango = "🔵 Especialista";
+}
+else if(puntos < 80){
+rango = "🟣 Investigador Senior";
+}
+else{
+rango = "🟡 Comandante de Salud Global";
+}
+
+document.getElementById("rango").innerHTML =
+"<strong>Rango actual:</strong> " + rango;
+}
+
+</script>
+
+</body>
+</html>
